@@ -14,7 +14,7 @@ Output: "apbqrs"
 """
 
 # Time Complexity: O(n)
-# Auxiliary Space Complexity: O(n) --> (Additional space is used to store the new ar.)
+# Auxiliary Space Complexity: O(n) --> (Additional space is used to store the new arr.)
 
 def mergeAlternately(word1, word2):
 	#initialize the 2 pointers for word1 and word2
