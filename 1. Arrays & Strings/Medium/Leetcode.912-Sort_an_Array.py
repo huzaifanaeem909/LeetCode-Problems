@@ -50,7 +50,7 @@ def sortArray(nums):
 
     def mergeSort(arr, left, right):
         if left >= right:
-            return
+            return arr
         mid = left + ((right - left) // 2)
         mergeSort(arr, left, mid)
         mergeSort(arr, mid + 1, right)
