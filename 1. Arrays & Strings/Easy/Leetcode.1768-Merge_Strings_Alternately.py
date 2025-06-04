@@ -16,6 +16,29 @@ Output: "apbqrs"
 # Time Complexity: O(n)
 # Auxiliary Space Complexity: O(n) --> (Additional space is used to store the new arr.)
 
+# Solution 1:
+def mergeStrings(word1,word2):
+    len1,len2 = len(word1),len(word2)
+    min_len = min(len1,len2)
+    res=[]
+    
+    for i in range(min_len):
+      res.append(word1[i])
+      res.append(word2[i])
+    
+    if len1 > len2:
+      res.append(word1[min_len:])
+    else:
+      res.append(word2[min_len:])
+    
+    return ''.join(res)
+
+word1 = 'abcd'
+word2 = 'pq'
+print(mergeStrings(word1,word2))
+
+
+# Solution 2:
 def mergeAlternately(word1, word2):
 	#initialize the 2 pointers for word1 and word2
 	pointer_for_word1 = 0
